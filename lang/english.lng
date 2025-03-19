@@ -1,0 +1,16 @@
+##grflangid 0x00
+# This is the English (US) language file
+
+# GRF name and description definitions
+STR_GRF_NAME        :{TITLE} {VERSION}
+STR_GRF_DESCRIPTION : This GRF adds the Embraer C-390 Millenium and its variant KC-390 to the game. Both the Portuguese Air Force and the Brazilian Air Force variants are included.
+
+# Vehicle names
+STR_C390_FAP_NAME  :Embraer C-390 Millenium (Portuguese Air Force)
+STR_C390_FAP_DESC  :The Embraer C-390 Millennium is a medium-size, twin-engine, jet-powered military transport aircraft designed and produced by the Brazilian aerospace manufacturer Embraer. It is the heaviest aircraft the company has constructed to date. (Wikipedia)
+STR_KC390_FAP_NAME :Embraer KC-390 Millenium (Portuguese Air Force)
+STR_KC390_FAP_DESC :The KC-390 is a variant of the Embraer C-390 Millenium that can be refueled in-flight. The Embraer C-390 Millennium is a medium-size, twin-engine, jet-powered military transport aircraft designed and produced by the Brazilian aerospace manufacturer Embraer. It is the heaviest aircraft the company has constructed to date. (Wikipedia)
+STR_C390_FAB_NAME  :Embraer C-390 Millenium (Brazilian Air Force)
+STR_C390_FAB_DESC  :The Embraer C-390 Millennium is a medium-size, twin-engine, jet-powered military transport aircraft designed and produced by the Brazilian aerospace manufacturer Embraer. It is the heaviest aircraft the company has constructed to date. (Wikipedia)
+STR_KC390_FAB_NAME :Embraer KC-390 Millenium (Brazilian Air Force)
+STR_KC390_FAB_DESC :The KC-390 is a variant of the Embraer C-390 Millenium that can be refueled in-flight. The Embraer C-390 Millennium is a medium-size, twin-engine, jet-powered military transport aircraft designed and produced by the Brazilian aerospace manufacturer Embraer. It is the heaviest aircraft the company has constructed to date. (Wikipedia)

@@ -1,0 +1,233 @@
+grf {
+    grfid: "TL\01\01";
+    name: string(STR_GRF_NAME);
+    desc: string(STR_GRF_DESCRIPTION);
+    version: 0;
+    min_compatible_version: 0;
+}
+
+
+spriteset(spriteset_c390_millenium_fap_default, "gfx/png/c390_millenium_fap.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [   0,     0,       29,    36,    -14,       -17]
+    [  30,     0,       44,    36,    -22,       -17]
+    [  75,     0,       44,    25,    -22,       -11]
+    [ 120,     0,       44,    36,    -22,       -17]
+    [ 165,     0,       29,    36,    -14,       -17]
+    [ 195,     0,       44,    36,    -22,       -17]
+    [ 240,     0,       44,    25,    -22,       -11]
+    [ 285,     0,       44,    36,    -22,       -17]
+}
+
+spritegroup spritegroup_c390_millenium_fap {
+    loaded:  [spriteset_c390_millenium_fap_default];
+    loading: [spriteset_c390_millenium_fap_default];
+}
+
+// Define the aircraft.
+item(FEAT_AIRCRAFT, item_c390_millenium_fap_1) {
+    property {
+        // Common to all vehicles.
+        name:                           string(STR_C390_FAP_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2019,09,04);
+        model_life:                     50;
+        // retire_early not set
+        vehicle_life:                   20;
+        // reliability_decay not set
+        refittable_cargo_classes:       ALL_CARGO_CLASSES;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        loading_speed:                  20;
+        cost_factor:                    200;
+        running_cost_factor:            69;
+        // cargo_age_period not set
+
+        // Common to all aircraft.
+        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT;
+        speed:                          870 km/h;
+        range:                          2720;
+        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+        refit_cost:                     20;
+        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+        acceleration:                   50;
+        passenger_capacity:             80;
+        mail_capacity:                  10;
+        sound_effect:                   SOUND_TAKEOFF_JET;
+    }
+
+    graphics {
+        additional_text:                return string(STR_C390_FAP_DESC); //Additional text shown in purchase list
+        default:                        spritegroup_c390_millenium_fap;
+        cost_factor:                    return 42;
+        running_cost_factor:            return 1745;
+    }
+}
+
+spriteset(spriteset_kc390_millenium_fap_default, "gfx/png/kc390_millenium_fap.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [   0,     0,       29,    36,    -14,       -17]
+    [  30,     0,       44,    36,    -22,       -17]
+    [  75,     0,       44,    25,    -22,       -11]
+    [ 120,     0,       44,    36,    -22,       -17]
+    [ 165,     0,       29,    36,    -14,       -17]
+    [ 195,     0,       44,    36,    -22,       -17]
+    [ 240,     0,       44,    25,    -22,       -11]
+    [ 285,     0,       44,    36,    -22,       -17]
+}
+
+spritegroup spritegroup_kc390_millenium_fap {
+    loaded:  [spriteset_kc390_millenium_fap_default];
+    loading: [spriteset_kc390_millenium_fap_default];
+}
+
+// Define the aircraft KC390.
+item(FEAT_AIRCRAFT, item_kc390_millenium_fap_1) {
+    property {
+        // Common to all vehicles.
+        name:                           string(STR_KC390_FAP_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2019,09,04);
+        model_life:                     50;
+        // retire_early not set
+        vehicle_life:                   20;
+        // reliability_decay not set
+        refittable_cargo_classes:       ALL_CARGO_CLASSES;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        loading_speed:                  20;
+        cost_factor:                    200;
+        running_cost_factor:            69;
+        // cargo_age_period not set
+
+        // Common to all aircraft.
+        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT;
+        speed:                          870 km/h;
+        range:                          2720;
+        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+        refit_cost:                     20;
+        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+        acceleration:                   50;
+        passenger_capacity:             80;
+        mail_capacity:                  10;
+        sound_effect:                   SOUND_TAKEOFF_JET;
+    }
+
+    graphics {
+        additional_text:                return string(STR_KC390_FAP_DESC); //Additional text shown in purchase list
+        default:                        spritegroup_kc390_millenium_fap;
+        cost_factor:                    return 43;
+        running_cost_factor:            return 1750;
+    }
+}
+
+
+spriteset(spriteset_c390_millenium_fab_default, "gfx/png/c390_millenium_fab.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [   0,     0,       29,    36,    -14,       -17]
+    [  30,     0,       44,    36,    -22,       -17]
+    [  75,     0,       44,    25,    -22,       -11]
+    [ 120,     0,       44,    36,    -22,       -17]
+    [ 165,     0,       29,    36,    -14,       -17]
+    [ 195,     0,       44,    36,    -22,       -17]
+    [ 240,     0,       44,    25,    -22,       -11]
+    [ 285,     0,       44,    36,    -22,       -17]
+}
+
+spritegroup spritegroup_c390_millenium_fab {
+    loaded:  [spriteset_c390_millenium_fab_default];
+    loading: [spriteset_c390_millenium_fab_default];
+}
+
+// Define the aircraft.
+item(FEAT_AIRCRAFT, item_c390_millenium_fab_1) {
+    property {
+        // Common to all vehicles.
+        name:                           string(STR_C390_FAB_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2019,09,04);
+        model_life:                     50;
+        // retire_early not set
+        vehicle_life:                   20;
+        // reliability_decay not set
+        refittable_cargo_classes:       ALL_CARGO_CLASSES;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        loading_speed:                  20;
+        cost_factor:                    200;
+        running_cost_factor:            69;
+        // cargo_age_period not set
+
+        // Common to all aircraft.
+        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT;
+        speed:                          870 km/h;
+        range:                          2720;
+        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+        refit_cost:                     20;
+        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+        acceleration:                   50;
+        passenger_capacity:             80;
+        mail_capacity:                  10;
+        sound_effect:                   SOUND_TAKEOFF_JET;
+    }
+
+    graphics {
+        additional_text:                return string(STR_C390_FAB_DESC); //Additional text shown in purchase list
+        default:                        spritegroup_c390_millenium_fab;
+        cost_factor:                    return 42;
+        running_cost_factor:            return 1745;
+    }
+}
+
+spriteset(spriteset_kc390_millenium_fab_default, "gfx/png/kc390_millenium_fab.png") {
+    //left_x, upper_y, width, height, offset_x, offset_y
+    [   0,     0,       29,    36,    -14,       -17]
+    [  30,     0,       44,    36,    -22,       -17]
+    [  75,     0,       44,    25,    -22,       -11]
+    [ 120,     0,       44,    36,    -22,       -17]
+    [ 165,     0,       29,    36,    -14,       -17]
+    [ 195,     0,       44,    36,    -22,       -17]
+    [ 240,     0,       44,    25,    -22,       -11]
+    [ 285,     0,       44,    36,    -22,       -17]
+}
+
+spritegroup spritegroup_kc390_millenium_fab {
+    loaded:  [spriteset_kc390_millenium_fab_default];
+    loading: [spriteset_kc390_millenium_fab_default];
+}
+
+// Define the aircraft KC390.
+item(FEAT_AIRCRAFT, item_kc390_millenium_fab_1) {
+    property {
+        // Common to all vehicles.
+        name:                           string(STR_KC390_FAB_NAME);
+        climates_available:             ALL_CLIMATES;
+        introduction_date:              date(2019,09,04);
+        model_life:                     50;
+        // retire_early not set
+        vehicle_life:                   20;
+        // reliability_decay not set
+        refittable_cargo_classes:       ALL_CARGO_CLASSES;
+        non_refittable_cargo_classes:   NO_CARGO_CLASS;
+        loading_speed:                  20;
+        cost_factor:                    200;
+        running_cost_factor:            69;
+        // cargo_age_period not set
+
+        // Common to all aircraft.
+        sprite_id:                      SPRITE_ID_NEW_AIRCRAFT;
+        speed:                          870 km/h;
+        range:                          2720;
+        misc_flags:                     bitmask(AIRCRAFT_FLAG_2CC, AIRCRAFT_FLAG_AUTOREFIT);
+        refit_cost:                     20;
+        aircraft_type:                  AIRCRAFT_TYPE_SMALL;
+        acceleration:                   50;
+        passenger_capacity:             80;
+        mail_capacity:                  10;
+        sound_effect:                   SOUND_TAKEOFF_JET;
+    }
+
+    graphics {
+        additional_text:                return string(STR_KC390_FAB_DESC); //Additional text shown in purchase list
+        default:                        spritegroup_kc390_millenium_fab;
+        cost_factor:                    return 43;
+        running_cost_factor:            return 1750;
+    }
+}
