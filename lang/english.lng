@@ -4,6 +4,7 @@
 # GRF name and description definitions
 STR_GRF_NAME        :{TITLE} {VERSION}
 STR_GRF_DESCRIPTION : This GRF adds the Embraer C-390 Millenium and its variant KC-390 to the game. Both the Portuguese Air Force and the Brazilian Air Force variants are included.
+STR_GRF_URL : https://github.com/cfpgomes/OpenTTD-KC390
 
 # Vehicle names
 STR_C390_FAP_NAME  :Embraer C-390 Millenium (Portuguese Air Force)
